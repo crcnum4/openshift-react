@@ -1,18 +1,18 @@
 import React from 'react';
 import BorderCard from '../common/BorderCard'
 
-const Dev = (props) => {
-  const {name, cohort} = props.dev;
+const Student = (props) => {
+  const {title, description} = props.Student;
   return (
     <BorderCard style={{width: '100%'}}>
       <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-around', alignItems: 'center'}}>
         <div style={{flexDirection: 'column', margin: 10}} >
-          <h2>Name</h2>
-          <h2 style={{fontWeight: 'bold'}}>{name}</h2>
+          <h2>Title</h2>
+          <h2 style={{fontWeight: 'bold'}}>{title}</h2>
         </div>
         <div style={{flexDirection: 'column', margin: 10}}>
-          <h2>Cohort</h2>
-          <h2>{cohort}</h2>
+          <h2>Description</h2>
+          <h2>{description}</h2>
         </div>
 
       </div>
@@ -20,4 +20,4 @@ const Dev = (props) => {
   )
 }
 
-export default Dev
+export default Student
