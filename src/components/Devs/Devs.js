@@ -11,6 +11,8 @@ const Devs = (props) => {
     const _getDevs = async () => {
       setLoading(true);
       const apiHost = process.env.API_HOST || "http://localhost:8080"
+      console.log(apiHost)
+      console.log(process.env.API_HOST);
       try {
         const res = await axios.get(`${apiHost}/api/developers`) 
         console.log(res.data);
