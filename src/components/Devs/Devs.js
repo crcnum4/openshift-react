@@ -10,9 +10,7 @@ const Devs = (props) => {
   useEffect(() => {
     const _getDevs = async () => {
       setLoading(true);
-      const apiHost = process.env.API_HOST || "http://localhost:8080"
-      console.log(apiHost)
-      console.log(process.env.API_HOST);
+      const apiHost = window.env.REACT_APP_API_HOST || "http://localhost:8080"
       try {
         const res = await axios.get(`${apiHost}/api/developers`) 
         console.log(res.data);
